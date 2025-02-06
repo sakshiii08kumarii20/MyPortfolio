@@ -24,8 +24,8 @@ const projectList = [
       'My Personal Portfolio, showing all necessary details for an Computer Science Student seeking for career opportunities and extend reach. ',
     img: PortfolioImg,
     tech: ['html css', 'javascript', 'react', 'nodejs'],
-    liveLink: '',
-    githubLink: ''
+    liveLink: 'https://sakshiii08kumarii20.github.io/MyPortfolio',
+    githubLink: 'https://github.com/sakshiii08kumarii20/MyPortfolio'
   },
   
   
