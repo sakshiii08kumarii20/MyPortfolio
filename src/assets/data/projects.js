@@ -10,7 +10,7 @@ const projectList = [
     id: uuidv4(),
     name: 'PredixDB',
     desc:
-      'Online platform that assists users to keep track media watched, currently watching, or planning to watch next. It even delivers personalized recommendations for each individual.',
+      'Developed a user-friendly application for real-time EV charging station discovery, queue tracking, and slot booking, featuring integrated payment options. Utilized HTML, CSS, JavaScript, Google Maps API, MySQL, Email.js and bootstrap for seamless functionality and user experience.',
     img: PredixImg,
     tech: ['django', 'html css', 'javascript', 'ai ml', 'python'],
     liveLink: 'https://sakshiii08kumarii20.github.io/TriChargeHub/',
