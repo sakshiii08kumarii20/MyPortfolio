@@ -81,7 +81,7 @@ export class Projects extends Component {
 
   render() {
     return (
-      <ProjectStyles>
+      <ProjectStyles>g
         <SectionTitle heading="PROJECTS" subheading="some of my works" />
           <div className="filters">
             {this.filter_names.map((name, index) => (
