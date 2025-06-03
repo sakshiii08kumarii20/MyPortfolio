@@ -4,45 +4,46 @@ import FooterColumns from "./FooterColumns";
 import PText from "./PText";
 
 const FooterStyles = styled.div`
-  padding-top: 5rem;
+  padding-top: 3rem;
   background-color: var(--deep-dark);
   .container {
     display: flex;
     gap: 2rem;
     .footer__col1 {
       flex: 2;
-      padding-right: 10rem;
+      padding-right: 5rem;
       .footer__c1__title {
-        font-size: 3.5rem;
-        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
       }
       p {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 1.4;
       }
     }
     .footer__col2,
-    .footer__col3, 
+    .footer__col3,
     .footer__col4 {
       flex: 1;
     }
   }
+
   .copyright {
     background-color: var(--dark-bg);
-    margin-top: 3rem;
-    padding: 0.6rem 0;
+    margin-top: 2rem;
+    padding: 0.4rem 0;
     text-align: center;
     p {
-      display: inline-block;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
   }
 
   @media only screen and (max-width: 768px) {
     .container {
       flex-direction: column;
-      gap: 0rem;
+      gap: 2rem;
       & > div {
-          margin-top: 5rem;
+        margin-top: 3rem;
       }
       .footer__col1 {
         padding: 0;
@@ -50,6 +51,7 @@ const FooterStyles = styled.div`
     }
   }
 `;
+
 export default function Footer() {
   return (
     <FooterStyles>
@@ -110,25 +112,7 @@ export default function Footer() {
             ]}
           />
         </div>
-        <div className="footer__col3">
-          <FooterColumns
-            heading="Coding Profiles"
-            links={[
-              {
-                title: "- HackerRank",
-                path: "https://www.hackerrank.com/profile/thakursakshi2241",
-              },
-              // {
-              //   title: "- CodeChef",
-              //   path: "https://www.codechef.com/users/skshamagarwal",
-              // },
-              {
-                title: "- LeetCode",
-                path: "https://leetcode.com/u/Sakshikumari_Thakur/",
-              },
-            ]}
-          />
-        </div>
+        
       </div>
       <div className="copyright">
         <div className="container">

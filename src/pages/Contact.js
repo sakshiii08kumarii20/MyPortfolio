@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdEmail } from "react-icons/md";
 import styled from "styled-components";
 import ContactInfoItem from "../components/ContactInfoItem";
 import SectionTitle from "../components/SectionTitle";
-import emailjs from "emailjs-com";
 import { FaLinkedin } from "react-icons/fa";
 
 const ContactSectionStyle = styled.div`
@@ -24,14 +23,15 @@ const ContactSectionStyle = styled.div`
       max-width: 500px;
     }
   }
+
   .contact__wrapper::after {
     position: absolute;
     content: "";
     width: 2px;
-    height: 50%;
+    height: 100%;
     background-color: var(--gray-1);
     left: 50%;
-    top: 30%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
 
@@ -49,84 +49,16 @@ const ContactSectionStyle = styled.div`
   }
 `;
 
-const FormSectionStyle = styled.form`
-  width: 100%;
-  .form-group {
-    width: 100%;
-    margin-bottom: 2rem;
-    label {
-      font-size: 1.8rem;
-      input,
-      textarea {
-        width: 100%;
-        font-size: 2rem;
-        padding: 1.2rem;
-        color: var(--gray-1);
-        background-color: var(--deep-dark);
-        outline: none;
-        border: none;
-        border-radius: 8px;
-        margin-top: 1rem;
-      }
-      textarea {
-        min-height: 250px;
-        resize: vertical;
-      }
-    }
-  }
-  button[type="submit"] {
-    font-size: 1.8rem;
-    background-color: var(--gray-1);
-    padding: 0.7em 1.5em;
-    border-radius: 8px;
-    border: 2px solid var(--gray-1);
-    color: black;
-    transition: 1s ease;
-
-    &:hover {
-      background-color: transparent;
-      color: var(--gray-1);
-    }
-  }
-
-  @media only screen and (max-width: 768px) {
-    button[type="submit"] {
-      font-size: 1.4rem;
-    }
-  }
+const CustomContentStyle = styled.div`
+  font-size: 1.8rem;
+  color: var(--gray-1);
+  background-color: var(--deep-dark);
+  padding: 2rem;
+  border-radius: 10px;
+  line-height: 1.6;
 `;
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_6rjxzum",
-        "template_zwpxzec",
-        e.target,
-        "user_4XxLhG5Qjqm436rvmL6fY"
-      )
-      .then((res) => {
-        alert(
-          "Your message has been sent, you will recieve a response on you email soon."
-        );
-      })
-      .catch((er) => {
-        alert(
-          "Some problem occurred while sending the message:: " +
-            er +
-            "\nPlease try again or send an email on thakursakshi2244@gmail.com"
-        );
-      });
-    setName("");
-    setEmail("");
-    setMessage("");
-  }
   return (
     <>
       <ContactSectionStyle>
@@ -149,64 +81,26 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrar noreferrer"
               >
-                <ContactInfoItem icon={<FaLinkedin />} text="Linked In" />
+                <ContactInfoItem icon={<FaLinkedin />} text="LinkedIn" />
               </a>
-              <ContactInfoItem text="Pune - India" />
+              
             </div>
             <div className="right">
-              <FormSectionStyle onSubmit={sendEmail}>
-                <div className="form-group">
-                  <label htmlFor="name">
-                    Your Name
-                    <input
-                      required
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />
-                  </label>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">
-                    Your Email
-                    <input
-                      required
-                      name="email"
-                      type="text"
-                      id="email"
-                      email="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </label>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">
-                    Your Message
-                    <textarea
-                      required
-                      name="message"
-                      type="text"
-                      id="message"
-                      message="message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                    />
-                  </label>
-                </div>
-                <button type="submit" value="Send">
-                  Send
-                </button>
-              </FormSectionStyle>
+              <CustomContentStyle>
+                <p>
+                  Thank you for visiting my portfolio! I'm always excited to
+                  connect, collaborate, or chat about new opportunities.
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  Whether you're interested in working together, have a
+                  question, or just want to say hi, feel free to reach out
+                  through email or LinkedIn.
+                </p>
+              </CustomContentStyle>
             </div>
           </div>
         </div>
       </ContactSectionStyle>
-      {/* <div>
-        <Map />
-      </div> */}
     </>
   );
 }
