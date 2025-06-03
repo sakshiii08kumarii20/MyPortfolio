@@ -2,7 +2,7 @@ import React from "react";
 import PText from "../components/PText";
 import styled from "styled-components";
 import AboutItems from "../components/AboutItems";
-import Img from "../assets/images/image .jpg";
+import Img from "../assets/images/image.jpg";
 import DownloadCV from "../components/DownloadCV";
 
 const AboutStyles = styled.div`
