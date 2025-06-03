@@ -106,26 +106,29 @@ export default function About() {
             heading="My Skills"
             entries={[
               {
-                title: "FrontEnd",
+                title: "Technologies & Frameworks",
                 items: [
                   "HTML",
                   "CSS",                 
                   "React JS",
-                  "Tailwind",
+                  "Node JS",
+                  
                 ],
               },
               {
                 title: "Databases",
                 items: ["MySQL", "MongoDB"],
               },
-              {
-                title: "BackEnd",
-                items: [ "Node"],
-              },
+              
+
               
               {
                 title: "Languages",
-                items: ["JavaScript" ,"Python", "Java"],
+                items: ["JavaScript" , "Java"],
+              },
+              {
+                title: "Other",
+                items: ["DSA", "Power BI" , "Git "],
               },
             ]}
           />
