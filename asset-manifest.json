@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.cf890fdb.css",
-    "main.js": "/MyPortfolio/static/js/main.f1fb017c.js",
+    "main.js": "/MyPortfolio/static/js/main.14c70776.js",
     "static/media/trihub.png": "/MyPortfolio/static/media/trihub.799790f84fdeebf1b044.png",
     "static/media/Studio.png": "/MyPortfolio/static/media/Studio.fe9b55d9a47f48c15099.png",
     "static/media/Montserrat-Bold.ttf": "/MyPortfolio/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
     "static/media/Montserrat-SemiBold.ttf": "/MyPortfolio/static/media/Montserrat-SemiBold.fa8441f345d83a0bc4ec.ttf",
     "static/media/CRUD.png": "/MyPortfolio/static/media/CRUD.1a98eba39720d4ddec27.png",
     "static/media/portfolio.png": "/MyPortfolio/static/media/portfolio.77355d6c239717ccd0c8.png",
+    "static/media/image.jpg": "/MyPortfolio/static/media/image.1c6dd8d86d697e31a6d9.jpg",
     "static/media/RobotoMono-Regular.ttf": "/MyPortfolio/static/media/RobotoMono-Regular.418a8f9f65ccad0918af.ttf",
-    "static/media/image.jpg": "/MyPortfolio/static/media/image.fcf1afa6046303cde2c6.jpg",
     "static/media/LilitaOne-Regular.ttf": "/MyPortfolio/static/media/LilitaOne-Regular.797856d9e8eaaa395824.ttf",
     "index.html": "/MyPortfolio/index.html",
     "main.cf890fdb.css.map": "/MyPortfolio/static/css/main.cf890fdb.css.map",
-    "main.f1fb017c.js.map": "/MyPortfolio/static/js/main.f1fb017c.js.map"
+    "main.14c70776.js.map": "/MyPortfolio/static/js/main.14c70776.js.map"
   },
   "entrypoints": [
     "static/css/main.cf890fdb.css",
-    "static/js/main.f1fb017c.js"
+    "static/js/main.14c70776.js"
   ]
 }
