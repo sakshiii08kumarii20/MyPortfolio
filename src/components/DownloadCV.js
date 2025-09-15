@@ -27,7 +27,7 @@ const ButtonStyle = styled.div`
 export default function DownloadCV() {
     return (
         <ButtonStyle>
-            <a className="button" href={"https://tinyurl.com/sakshii-resume"} download="Sakshikumari's Resume" target='_blank' rel="noreferrer">
+            <a className="button" href={"https://tinyurl.com/2asxrr94"} download="Sakshikumari's Resume" target='_blank' rel="noreferrer">
                 Download CV
             </a>
         </ButtonStyle>

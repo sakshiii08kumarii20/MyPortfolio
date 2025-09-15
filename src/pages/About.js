@@ -84,15 +84,17 @@ export default function About() {
             </h2>
             <div className="about__info">
               <PText>
-              I’m from Betiah, a historic town in Bihar, 
-              and currently based in Pune, a fresher
-              pursuing my Master’s degree while immersing myself in the world of software development.
-                <br />
-                <br />I’m at the beginning of my career and deeply passionate about coding and technology, 
-                constantly learning and enhancing my skills.
-                 I have a strong interest in Competitive Programming and Open Source contributions, 
-                 and I’m always excited to explore new technologies.
-              </PText>
+  I am originally from Betiah, a historic town in Bihar, and currently based in Pune. 
+  I have recently completed my Master’s degree in Computer Applications and successfully 
+  completed an internship, where I gained valuable practical experience in software development. 
+  <br />
+  <br />
+  I am passionate about coding and technology, with a continuous drive to learn and refine my skills. 
+  My areas of interest include Competitive Programming, Open Source contributions, and exploring 
+  emerging technologies. I am eager to apply my knowledge and contribute to innovative projects 
+  that create real-world impact.
+</PText>
+
             </div>
             <DownloadCV />
           </div>
@@ -112,6 +114,7 @@ export default function About() {
                   "CSS",                 
                   "React JS",
                   "Node JS",
+                  "Spring Boot",
                   
                 ],
               },
@@ -140,7 +143,7 @@ export default function About() {
                 items: [
                   "Modern College Shivajinagar, Pune",
     
-                  "Marks: 85.90%",
+                  "Marks: 91%",
                 ],
               },
 
